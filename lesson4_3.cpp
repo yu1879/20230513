@@ -4,6 +4,8 @@ using namespace std;
 int rec(int);
 int factor(int);
 int reverse(int);
+int reverse(int n);
+int strMethod(int );
 
 int main(int args, char **argv) {
     system("chcp 65001");
@@ -16,7 +18,17 @@ int main(int args, char **argv) {
 //rec(8);
     return 0;
 }
+int strMethod(int n){
+    string source=to_string(n);
+    string result="";
+    int len=source.length();
+    for(int m=len-1;m>=0;m--){
+        result+=source.substr(m,1);
+    }
+    return stoi(result);
 
+
+}
 int reverse(int n){
     static int rev=0,rem;
     if(n==0){
