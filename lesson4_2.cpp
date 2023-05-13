@@ -2,7 +2,7 @@
 #include  <cstdlib>
 #include  <ctime>
 using namespace std;
-
+void genLotto(int[],int);
 int main(int args, char **argv) {
 
     srand(time(0));
@@ -24,8 +24,9 @@ int main(int args, char **argv) {
 //2.顯示六個號碼showLotto
     for(int m=0; m<6; m++){
         cout<<lotto[m]<<"\t";
-        cout<<endl;
-    }
+
+}
+    cout<<endl;
     for(int m=0;m<5;m++){
         for(int p=m+1;p<6;p++){
             if(lotto[m]>lotto[p]){
@@ -42,7 +43,11 @@ int main(int args, char **argv) {
 
     {
         cout<<lotto[m]<<"\t";
-        cout<<endl;
+
     }
+    cout<<endl;
     return 0;
+}
+void genLotto(int lotto[],int length){
+
 }
