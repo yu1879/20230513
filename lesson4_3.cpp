@@ -8,7 +8,6 @@ int reverse(int n);
 int strMethod(int );
 
 int main(int args, char **argv) {
-    system("chcp 65001");
     cout<<"請輸入任意數字:";
     int max;
     cin>>max;
